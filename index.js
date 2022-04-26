@@ -2,11 +2,14 @@
 import './style.css';
 
 // Write Javascript code!
+
+/*** TRAFIC LIGHT ***/
+
+// Circles
 var circles = document.querySelectorAll('.traffic-light__circle');
-console.log(circles);
+// console.log(circles);
 
-startTrafficLight();
-
+// Trafic light
 function startTrafficLight() {
   circles[0].style.background = "red";
   circles[1].style.background = "white";
@@ -25,3 +28,5 @@ function startTrafficLight() {
   setTimeout(startTrafficLight,6000);
 
 }
+
+startTrafficLight();
